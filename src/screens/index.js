@@ -1,0 +1,5 @@
+export { default as Home } from './Home/Home'
+export { default as Location } from './locations/Location'
+export { default as Buzz } from './buzz/Buzz'
+export { default as Notifications } from './notifications/Notification'
+export { default as Profile } from './profile/Profile'
