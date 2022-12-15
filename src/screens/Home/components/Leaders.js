@@ -4,7 +4,7 @@ import { colors } from "../../../theme/Color";
 import { MaterialIcons } from "@expo/vector-icons";
 import Button from "../../../components/Button";
 import Circle from "../../../components/Circle";
-const EventCategories = ({ details }) => {
+const Leaders = ({ details }) => {
   return (
     <View style={styles.categoryContainer}>
       <View
@@ -27,10 +27,9 @@ const EventCategories = ({ details }) => {
               marginLeft: 5,
             }}
           >
-            Event Categories
+            Leaders
           </Text>
         </View>
-        <Button title="More Events" />
       </View>
       <FlatList
         data={details}
@@ -44,37 +43,16 @@ const EventCategories = ({ details }) => {
                 marginTop: 15,
                 width: 180,
                 height: 180,
-                borderRadius: 10,
+                borderRadius: 100,
                 backgroundColor: colors.primary,
                 marginHorizontal: 5,
               }}
             >
               <Image
                 source={element.item.image}
-                style={{ width: "100%", height: "100%", borderRadius: 10 }}
+                style={{ width: "100%", height: "100%", borderRadius: 100 }}
                 resizeMode="cover"
               />
-              <View
-                style={{
-                  position: "absolute",
-                  bottom: -15,
-                  left: "22%",
-                  width: 100,
-                  height: 40,
-                  backgroundColor: colors.gray,
-                  justifyContent: "center",
-                  alignItems: "center",
-                  borderRadius: 5,
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: 17,
-                  }}
-                >
-                  {element.item.name}
-                </Text>
-              </View>
             </View>
           </View>
         )}
@@ -83,14 +61,12 @@ const EventCategories = ({ details }) => {
   );
 };
 
-export default EventCategories;
+export default Leaders;
 
 const styles = StyleSheet.create({
   categoryContainer: {
     height: 280,
     width: "100%",
-    backgroundColor: colors.lightgray,
     paddingHorizontal: 10,
-    paddingVertical: 10,
   },
 });

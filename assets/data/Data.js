@@ -31,4 +31,24 @@ export const homeScreen = {
       name: "Foood",
     },
   ],
+  plans: [
+    {
+      id: 1,
+      title: "Management",
+      months: 1,
+      charge: 500,
+    },
+    {
+      id: 2,
+      title: "Management",
+      months: 3,
+      charge: 800,
+    },
+    {
+      id: 3,
+      title: "Normal Executive",
+      months: 5,
+      charge: 1200,
+    },
+  ],
 };

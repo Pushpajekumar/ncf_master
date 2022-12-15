@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { ResizeMode } from "expo-av";
 import VideoPlayer from "expo-video-player";
-import Video_uri from "../../../../assets/videos/heroBanner.mp4";
 
 const HeroBanner = () => {
   return (
